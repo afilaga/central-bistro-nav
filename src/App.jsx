@@ -124,12 +124,13 @@ const App = () => {
 
 // Styled Components
 const Container = styled.div`
-  padding: 28px 20px;
+  padding: 36px 20px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   width: 100%;
+  min-height: 100vh;
 `;
 
 const Header = styled.div`

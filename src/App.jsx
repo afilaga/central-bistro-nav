@@ -32,38 +32,32 @@ const App = () => {
     {
       title: 'Наш сайт',
       url: 'https://bistro-central.ru/',
-      icon: <Globe size={20} />,
-      color: '#4A90E2'
+      icon: <Globe size={18} />
     },
     {
       title: 'Меню',
       url: 'https://menu.bistro-central.ru/',
-      icon: <Utensils size={20} />,
-      color: '#E67E22'
+      icon: <Utensils size={18} />
     },
     {
       title: 'Система лояльности',
       url: 'https://form.p-h.app/3b4ab0b7a86caeeb780d9386f45f43fa',
-      icon: <Gift size={20} />,
-      color: '#D4AF37'
+      icon: <Gift size={18} />
     },
     {
       title: 'Оставить отзыв на Яндекс',
       url: 'https://ya.cc/t/59BI2R2U8LbGQQ',
-      icon: <Star size={20} />,
-      color: '#FFCC00'
+      icon: <Star size={18} />
     },
     {
       title: 'Оставить отзыв на 2ГИС',
       url: 'https://2gis.ru/reviews/70000001104625701/addReview?utm_source=lk',
-      icon: <MapPin size={20} />,
-      color: '#28A745'
+      icon: <MapPin size={18} />
     },
     {
       title: 'Instagram',
       url: 'https://www.instagram.com/central.bistro.sochi/',
-      icon: <InstagramIcon size={20} />,
-      color: '#E1306C'
+      icon: <InstagramIcon size={18} />
     }
   ];
 
@@ -106,7 +100,7 @@ const App = () => {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <IconWrapper style={{ color: link.color }}>
+            <IconWrapper>
               {link.icon}
             </IconWrapper>
             <LinkTitle>{link.title}</LinkTitle>
@@ -218,7 +212,7 @@ const IconWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  color: inherit;
+  color: #888;
 `;
 
 const LinkTitle = styled.span`

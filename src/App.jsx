@@ -184,24 +184,32 @@ const Subtitle = styled(motion.p)`
 const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   width: 100%;
+  align-items: center;
 `;
 
 const LinkButton = styled(motion.a)`
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: 13px 18px;
-  background: #e8e8e8;
-  border-radius: 14px;
-  box-shadow: 5px 5px 10px #c5c5c5, -5px -5px 10px #ffffff;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 70%;
+  padding: 11px 20px;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+  border: 2px solid rgb(206, 206, 206);
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff,
+      2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+  }
 
   &:active {
-    box-shadow: inset 3px 3px 7px #c5c5c5, inset -3px -3px 7px #ffffff;
+    box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+    transform: scale(0.97);
   }
 `;
 
@@ -209,18 +217,15 @@ const IconWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 12px;
-  padding: 8px;
-  background: #e8e8e8;
-  border-radius: 10px;
-  box-shadow: 3px 3px 6px #c5c5c5, -3px -3px 6px #ffffff;
+  margin-right: 10px;
+  color: inherit;
 `;
 
 const LinkTitle = styled.span`
   flex: 1;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  color: #333;
+  color: #4d4d4d;
 `;
 
 const ArrowWrapper = styled.div`
